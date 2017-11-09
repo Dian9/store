@@ -8,4 +8,7 @@ public class HomeController {
 
     @GetMapping("/home")
     public void homepage(){}
+    
+    @GetMapping("/index")
+    public void homeindex(){}
 }
