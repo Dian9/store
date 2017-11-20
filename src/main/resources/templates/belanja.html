@@ -28,7 +28,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="text/javascript" src="js/easing.js"></script>
 <script type="text/javascript">
 					jQuery(document).ready(function($) {
-						$(".scroll").click(function(event){		
+						$(".scroll").click(function(event){
 							event.preventDefault();
 							$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 						});
@@ -49,14 +49,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 }
 li.dropdown:hover > .dropdown-menu {
     display: block;
-}
-
-.glyphicon {  margin-bottom: 10px;margin-right: 10px;}
-
-small {
-display: block;
-line-height: 1.428571429;
-color: #999;
 }
 </style>
 </head>
@@ -340,31 +332,112 @@ color: #999;
 </div>
 <!--banner-->
 
-
 <div class="content">
 	<div class="container">
-	<div class="row" style="margin-top:15px;background-color: white;padding: 10px;">
-      <table class="table table-bordered" >
-          <thead>
-              <tr>
-                  <td>No</td>
-                  <td>No</td>
-                  <td>No</td>
-                  <td>No</td>
-              </tr>
-          </thead>
-          <tbody>
-              <tr>
-                  <td>90</td>
-                  <td>90</td>
-                  <td>90</td>
-                  <td>90</td>
-              </tr>
-          </tbody>
-      </table>
-
-    </div>
-    <div class="clearfix"> </div>
+		<div class="content-bottom" style="margin-top:20px;">
+				<div class="col-md-9 latter-right">			
+					<div class="bs-example">
+					    <form class="form-horizontal" method="post" style="margin-left:20%; margin-top:2%;">
+					        <div class="form-group">
+					            <label class="control-label col-xs-3">Nama Penerima:</label>
+					            <div class="col-xs-9">
+					                <input type="text" class="form-control" placeholder="Nama Penerima" required>
+					            </div>
+					        </div>
+					        <div class="form-group">
+					            <label class="control-label col-xs-3">Nomor Telpon/HP:</label>
+					            <div class="col-xs-9">
+					                <input type="text" class="form-control" placeholder="Nomor Telpon/HP" required>
+					            </div>
+					        </div>
+					        <div class="form-group">
+					            <label class="control-label col-xs-3">Alamat:</label>
+					            <div class="col-xs-9">
+					                <textarea rows="3" class="form-control" id="postalAddress" placeholder="Alamat" required></textarea>
+					            </div>
+					        </div>
+							<div class="form-group">
+					            <label class="control-label col-xs-3">Kode Pos:</label>
+					            <div class="col-xs-9">
+					                <input type="text" class="form-control" placeholder="Kode Pos" required>
+					            </div>
+					        </div>
+					        <div class="form-group">
+					            <label class="control-label col-xs-3">Phone Number:</label>
+					            <div class="col-xs-9">
+					                <input type="tel" class="form-control" placeholder="Phone Number" required>
+					            </div>
+					        </div>
+					        <div class="form-group">
+					            <label class="control-label col-xs-3">Provinsi:</label>
+					            <div class="col-xs-9">
+					                <select class="form-control">
+					                    <option>Pilih Provinsi</option>
+					                    <option>Jawa Timur</option>
+					                    <option>Jawa Barat</option>
+					                    <option>Jawa Tengah</option>
+					                    <option>Kalimantan Barat</option>
+					                    <option>Kalimantan Timur</option>
+					                    <option>Kalimantan Selatan</option>
+					                    <option>Kalimantan Tengah</option>
+					                    <option>Kalimantan Utara</option>
+					                </select>
+					            </div>
+					        </div>
+					        <div class="form-group">
+					            <label class="control-label col-xs-3">Kota/Kabupaten:</label>
+					            <div class="col-xs-9">
+					                <select class="form-control">
+					                    <option>Pilih Kota/Kabupaten</option>
+					                    <option>Kab. Banyuwangi</option>
+					                    <option>Kab. Jember</option>
+					                    <option>Kab. Malang</option>
+					                    <option>Kab. Madiun</option>
+					                    <option>Kab. Mojokerto</option>
+					                </select>
+					            </div>
+					        </div>
+					        <div class="form-group">
+					            <label class="control-label col-xs-3">Kecamatan:</label>
+					            <div class="col-xs-9">
+					                <select class="form-control">
+					                    <option>Pilih Kecamatan</option>
+					                    <option>Sempu</option>
+					                    <option>Giri</option>
+					                    <option>Rogojampi</option>
+					                    <option>Banyuwangi</option>
+					                    <option>Genteng</option>
+					                </select>
+					            </div>
+					        </div>
+					        <div class="form-group">
+					            <label class="control-label col-xs-3">Kurir:</label>
+					            <div class="col-xs-9">
+					                <select class="form-control">
+					                    <option>Pilih Kurir</option>
+					                </select>
+					            </div>
+					        </div>
+					        <div class="form-group">
+					            <label class="control-label col-xs-3">No. Rekening:</label>
+					            <div class="col-xs-9">
+					                <input type="text" class="form-control" placeholder="No. Rekening" required>
+					            </div>
+					        </div>
+					        <br>
+					        <div class="form-group">
+					            <div class="col-xs-offset-3 col-xs-9">
+					                <a href="index.html" class="btn btn-default">Lanjut Berbelanja</a>
+					                <button class="btn btn-primary" >Pilih Metode Pembayaran</button>
+					            </div>
+					        </div>
+					    </form>
+					</div>
+						
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+				<div class="clearfix"> </div>
 		<div class="content-top">
 		<h2 class="new">NEW ARRIVALS</h2>
 		<div class="pink">
@@ -385,7 +458,7 @@ color: #999;
 			<div id="owl-demo" class="owl-carousel text-center">
 			<div class="item">
 				<div class=" box-in">
-			<div class=" grid_box">		
+			<div class=" grid_box">
 							 <a href="single.html" > <img src="images/pi.jpg" class="img-responsive" alt="">
 							 	<div class="zoom-icon">
 							 		
@@ -398,7 +471,6 @@ color: #999;
 										<li><span>XL</span></li>
 										<li><span> XXL</span></li>
 									</ul>
-					
 					
 						<ul class="in-by-color">
 							<li><h5>colors:</h5></li>                   
@@ -790,7 +862,6 @@ color: #999;
 				</div>
 			</div>
 			<div class="clearfix"> </div>
-		</div>
 	</div>
 	<!---->
 		
