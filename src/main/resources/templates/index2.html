@@ -51,19 +51,33 @@ li.dropdown:hover > .dropdown-menu {
     display: block;
 }
 
-.glyphicon {  margin-bottom: 10px;margin-right: 10px;}
+/*Modal*/
+.modal-content {border-radius: 0;box-shadow: none;}
+.modal-header {border-bottom: 1px solid #F2F2F2;}
+.modal-body {padding: 30px 15px;}
+.form .button {width: 100%; margin: 15px 0; padding: 10px 0; border: none;}
 
-small {
-display: block;
-line-height: 1.428571429;
-color: #999;
-}
+.form .button.primary {color: #fff; background-color: #22E094; margin: 0 0 15px 0;}
+.form .button.primary:hover {color: #fff; background-color: #22d68e;}
+.form .button.facebook {color: #fff; background-color: #4267b2;}
+.form .button.facebook:hover {color: #fff; background-color: #3f62a8;}
+.form .button.twitter {color: #fff; background-color: #1da1f2;}
+.form .button.twitter:hover {color: #fff; background-color: #199ae5;}
+
+.form .form-control {margin: 0 0 30px 0; box-shadow: none; background: #F2F2F2; border: none; border-radius: 0;}
+.form .labelRight{float: right; cursor: pointer;}
+.form .control-label {margin: 0 0 10px 0;}
+.form .control-label a {color: #4267b2;}
+.form .control-label a:hover {color: #1da1f2; text-decoration: none;}
+
+.form p {text-align: center;}
+/*End Modal*/
 </style>
 </head>
 <body> 
 <!--header-->	
 <div class="header" >
-<div class="top-header" style="height: 65px;">		
+<div class="top-header" style="height: 65px;">
 		<div class="container">
 		<div class="top-head" >
 			<div class="header-para">
@@ -82,46 +96,55 @@ color: #999;
 
 			<div class="world" style="margin-left: 10px; margin-top: -6px;">
 					<ul class="nav navbar-nav">
-						<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color:#a9b2c5;"><i class="glyphicon glyphicon-bell"></i> Notifikasi <i class="caret"></i></a>
-								<ul class="dropdown-menu">
-								  <li><a href="#">Pesan <i class="badge" style="background-color: green">1</i></a></li>
-								  <li><a href="#">Diskusi Produk <i class="badge" style="background-color: green">9</i></a></li>
-								  <li><a href="#">Ulasan <i class="badge" style="background-color: green">4</i></a></li>
-								  <li><a href="#">Layanan Pengguna <i class="badge" style="background-color: green">10</i></a></li>
-								  <li><a href="#">Pusat Resolasi <i class="badge" style="background-color: green">15</i></a></li>
-								  <li><a href="#">Seller Info <i class="badge" style="background-color: green">13</i></a></li>
-								</ul>
+						<li class="dropdown"><a class="dropdown-toggle" href="register.html" style="color:#a9b2c5;"><i class="glyphicon glyphicon-user"></i> Daftar</a>
 							</li>
-							<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color:#a9b2c5;"><i class="glyphicon glyphicon-home"></i> Toko<i class="caret"></i></a>
-								<ul class="dropdown-menu">
-								  <li><a href="#">Nama Toko</a></li>
-								  <li><a href="#">Penjualan</a></li>
-								  <li><a href="#">Tambah Produk</a></li>
-								  <li><a href="#">Daftar Produk</a></li>
-								  <li><a href="#">Statistik</a></li>
-								  <li><a href="#">TopAds</a></li>
-								  <li><a href="#">Pengaturan Toko</a></li>
-								  <li><a href="#">Pengaturan Admin</a></li>
-								</ul>
-							</li>
-							<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color:#a9b2c5;"><i class="glyphicon glyphicon-user"></i> User<i class="caret"></i></a>
-								<ul class="dropdown-menu">
-								  <li><a href="#">Nama User</a></li>
-								  <li><a href="#">Saldo Rp.0</a></li>
-								  <li><a href="#">Pembelian</a></li>
-								  <li><a href="#">Wishlist</a></li>
-								  <li><a href="#">Toko Favorit</a></li>
-								  <li><a href="#">Pengaturan</a></li>
-								  <li><a href="index2.html">Keluar</a></li>
-								</ul>
-							</li>
-						
+							<li class="dropdown"><a class="dropdown-toggle" style="color:#a9b2c5;" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><i class="glyphicon glyphicon-log-in"></i> Masuk</a>
+							</li>	
 					</ul>
 				</div>
 				<div class="clearfix"> </div>
 		</div>
 		</div>
 	</div>
+
+	<!--ÁREA MODAL-->
+        <div class="modal fade bs-example-modal-sm" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel"></h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form">
+                                    <div class="form-group">
+                                        <label for="recipient-name" class="control-label">Email</label>
+                                        <input type="text" class="form-control" id="recipient-name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message-text" class="control-label">Kata Sandi</label>
+                                        
+                                        <label for="message-text" class="control-label labelRight"><a href="#">Lupa kata sandi ?</a></label>
+                                        
+                                        <input type="password" class="form-control" id="recipient-name">
+                                    </div>
+                                    <a href="index.html"><button type="button" class="button btn primary">Masuk ke Markito</button></a>
+
+                                    <p>- atau -</p>
+
+                                    <button type="button" class="button btn facebook">Masuk dengan Facebook</button>
+                                    <button type="button" class="button btn twitter">Masuk dengan Twitter</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--ÁREA MODAL FIM-->
 		<!---->
 	
 		<div class="header-top">
@@ -340,31 +363,149 @@ color: #999;
 </div>
 <!--banner-->
 
-
+	<div class="banner">
+<div class="container">	
+		  <div class="wmuSlider example1">
+			   <div class="wmuSliderWrapper">
+			 <article style="position: absolute; width: 100%; opacity: 0;"> 
+				   	<div class="banner-wrap">
+					
+						<div class="banner-top">
+						<a href="single.html">
+						<div class="banner-top-in">
+							<img src="images/ba.png" class="img-responsive" alt="">
+						</div></a>
+						<div class="cart-at grid_1 simpleCart_shelfItem">
+								<div class="item_add"><span class="item_price" >123 $ <i> </i> </span></div>
+							<div class="off">
+								<label>35% off !</label>
+								<p>White Blended Cotton "still fresh" t-shirt</p>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+						
+						</div>
+						
+						 
+						  <div class="banner-top banner-bottom">
+						 <a href="single.html">
+						<div class="banner-top-in at">
+							<img src="images/ba2.png" class="img-responsive" alt="">
+						</div></a>
+						<div class="cart-at grid_1 simpleCart_shelfItem">
+								<div class="item_add"><span class="item_price" >123 $ <i> </i> </span></div>
+							<div class="off">
+								<label>35% off !</label>
+								<p>White Blended Cotton "still fresh" t-shirt</p>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+						
+						</div>
+						
+				   		 <div class="clearfix"> </div>
+						 
+				   	 </div>
+			</article>
+			 <article style="position: absolute; width: 100%; opacity: 0;"> 
+				   		<div class="banner-wrap">
+						
+						<div class="banner-top">
+						<a href="single.html">
+						<div class="banner-top-in">
+							<img src="images/ba11.png" class="img-responsive" alt="">
+						</div></a>
+						<div class="cart-at grid_1 simpleCart_shelfItem">
+								<div class="item_add"><span class="item_price" >123 $ <i> </i> </span></div>
+							<div class="off">
+								<label>35% off !</label>
+								<p>White Blended Cotton "still fresh" t-shirt</p>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+						
+						</div>
+						
+						
+						  <div class="banner-top banner-bottom">
+						  <a href="single.html">
+						<div class="banner-top-in at">
+							<img src="images/ba21.png" class="img-responsive" alt="">
+						</div></a>
+						<div class="cart-at grid_1 simpleCart_shelfItem">
+								<div class="item_add"><span class="item_price" >123 $ <i> </i> </span></div>
+							<div class="off">
+								<label>35% off !</label>
+								<p>White Blended Cotton "still fresh" t-shirt</p>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+						
+						</div>
+						
+				   		 <div class="clearfix"> </div>
+						
+				   	 </div>
+			</article>
+			 <article style="position: absolute; width: 100%; opacity: 0;"> 
+				   		<div class="banner-wrap">
+						
+						<div class="banner-top">
+						<a href="single.html">
+						<div class="banner-top-in">
+							<img src="images/ba12.png" class="img-responsive" alt="">
+						</div></a>
+						<div class="cart-at grid_1 simpleCart_shelfItem">
+								<div class="item_add"><span class="item_price" >123 $ <i> </i> </span></div>
+							<div class="off">
+								<label>35% off !</label>
+								<p>White Blended Cotton "still fresh" t-shirt</p>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+						
+						</div>
+						
+						 
+						   <div class="banner-top banner-bottom">
+						  <a href="single.html">
+						<div class="banner-top-in at">
+							<img src="images/ba22.png" class="img-responsive" alt="">
+						</div></a>
+						<div class="cart-at grid_1 simpleCart_shelfItem">
+								<div class="item_add"><span class="item_price" >123 $ <i> </i> </span></div>
+							<div class="off">
+								<label>35% off !</label>
+								<p>White Blended Cotton "still fresh" t-shirt</p>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+						
+						</div>
+				   		 <div class="clearfix"> </div>
+						
+				   	 </div>
+			</article>
+			</div>
+			 <ul class="wmuSliderPagination">
+                	<li><a href="#" class="">0</a></li>
+                	<li><a href="#" class="">1</a></li>
+                	<li><a href="#" class="wmuActive">2</a></li>
+                </ul>
+		</div>
+		<!---->
+		  <script src="js/jquery.wmuSlider.js"></script> 
+			  <script>
+       			$('.example1').wmuSlider({
+					 pagination : true,
+					 nav : false,
+				});         
+   		     </script> 	
+		
+		</div>   
+	</div>
 <div class="content">
 	<div class="container">
-	<div class="row" style="margin-top:15px;background-color: white;padding: 10px;">
-      <table class="table table-bordered" >
-          <thead>
-              <tr>
-                  <td>No</td>
-                  <td>No</td>
-                  <td>No</td>
-                  <td>No</td>
-              </tr>
-          </thead>
-          <tbody>
-              <tr>
-                  <td>90</td>
-                  <td>90</td>
-                  <td>90</td>
-                  <td>90</td>
-              </tr>
-          </tbody>
-      </table>
-
-    </div>
-    <div class="clearfix"> </div>
 		<div class="content-top">
 		<h2 class="new">NEW ARRIVALS</h2>
 		<div class="pink">
