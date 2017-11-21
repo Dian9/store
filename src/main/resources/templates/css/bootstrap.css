@@ -753,7 +753,7 @@ pre code {
   .container {
     width: 1170px;
   }
-}
+  }
 .container-fluid {
   padding-right: 15px;
   padding-left: 15px;
@@ -5783,3 +5783,35 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+
+/* Important code */
+.input2 input, section {
+  clear: both;
+  padding-top: 10px;
+  display: none;
+}
+label {
+  font-weight: bold;
+  font-size: 14px;
+  display: block;
+  float: left;
+  padding: 10px 30px;
+  border-top: 2px solid transparent;
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-bottom: 1px solid #DDD;
+}
+label:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+#tab1:checked ~ #content1, #tab2:checked ~ #content2, #tab3:checked ~ #content3, #tab4:checked ~ #content4, #tab5:checked ~ #content5, #tab6:checked ~ #content6 {
+  display: block;
+}
+input:checked + label {
+  border-top-color: #2ea510;
+  border-right-color: #DDD;
+  border-left-color: #DDD;
+  border-bottom-color: transparent;
+  text-decoration: none;
+}
