@@ -1,0 +1,322 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+body{
+	background: #dedede;
+	font-family: 'Helvetica', arial, sans-serif;
+
+	font-size: 15px;
+}
+
+p{
+	margin-bottom: 20px;
+	line-height: 1.5em;
+}
+h3{
+	margin-bottom: 20px;	
+}
+
+a{
+	text-decoration: none;
+	color: #600445;
+}
+a:hover{
+	color: #666;
+}
+
+
+.container{
+	max-width: 1080px;
+	margin: 20px auto;
+	background: #fff;
+	overflow: hidden;
+	padding: 10px;
+}
+
+
+.header{
+	
+	padding: 10px;
+	margin: 10px;
+	margin-left: 26%;
+	margin-top: 80px;
+}
+
+.header1{
+	padding: 10px;
+	margin: 10px;
+	margin-left: 26%;
+}
+.isi{
+	padding: 10px;
+	margin: 10px;
+	margin-left: 26%;
+}
+
+
+/* Main */
+	.left{
+		width: 250px;
+		border: 1px solid #dedede;
+		background: #e5e5e5;
+		padding: 10px;
+		margin: 10px;
+		float: left;
+	}
+
+	.middle{
+		width: 770px;
+		border: 1px solid #dedede;
+		padding: 10px;
+		margin: 10px;
+		float: left;
+	}
+		.middle img{
+			max-width: 100%;
+			height: auto;
+		}
+
+		.middle a{
+			font-weight: bold;
+		}
+
+		.middle h3{
+			border-bottom: 1px solid #aaa;
+			line-height: 1.5em;
+			border-top-width: 5px;
+		}
+
+	.middle1{
+		width: 770px;
+		border: 1px solid #dedede;
+		padding: 10px;
+		margin: 10px;
+		float: left;
+		margin-left: 26%;
+	}
+		.middle1 img{
+			max-width: 100%;
+			height: auto;
+		}
+
+		.middle1 a{
+			font-weight: bold;
+		}
+
+		.middle1 p{
+			margin-top: -20px;
+			font-size: 13px;
+			border-bottom: 1px solid #aaa;
+		}
+	.text{
+			margin-left: 65%;
+			float: right;
+    		margin-bottom: 10%;
+    		margin-top: -15%;
+		}
+	.text1{
+			margin-left: 65%;
+			float: right;
+    		margin-bottom: 10%;
+    		margin-top: -5%;
+		}
+
+	.middle2{
+		width: 770px;
+		border: 1px solid #dedede;
+		padding: 10px;
+		margin: 10px;
+		float: left;
+		margin-left: 26%;
+	}
+		.middle2 img{
+			max-width: 100%;
+			height: auto;
+		}
+
+		.middle2 a{
+			margin-top:30%;
+			float: left;
+		}
+
+		.middle2 p{
+			margin-top: -20px;
+			font-size: 13px;
+			border-bottom: 1px solid #aaa;
+		}
+		.middle2 p.cat{
+			font-size: 13px;
+			border-bottom: 1px solid white;
+		}
+		.place{
+			margin-left: 65%;
+			float: right;
+		}
+		.cat1 p{
+			margin-top: 15%;
+			font-size: 13px;
+			border-bottom: 1px solid white;	
+
+		}
+		.cat2 p{
+			margin-top: 15%;
+			font-size: 13px;
+			border-bottom: 1px solid white;	
+		}
+		.cat3 p{
+			margin-top: 10%;
+			font-size: 13px;
+			border-bottom: 1px solid white;	
+		}
+		.cat4 p{
+			margin-top: 10%;
+			font-size: 13px;
+			border-bottom: 1px solid white;	
+		}
+		
+		
+		.text{
+			margin-left: 65%;
+			float: right;
+    		margin-bottom: 10%;
+    		margin-top: -15%;
+	}
+	.middle3{
+		width: 770px;
+		border: 1px solid #dedede;
+		padding: 10px;
+		margin: 10px;
+		float: left;
+		margin-left: 26%;
+	}
+		.middle3 img{
+			max-width: 100%;
+			height: auto;
+		}
+		.middle3 p{
+			margin-top: -20px;
+			font-size: 13px;
+			border-bottom: 1px solid white;
+
+		}
+
+		.middle3 a{
+			font-weight: bold;
+		}
+
+		.middle3 h3{
+			border-bottom: 1px solid #aaa;
+			line-height: 1.5em;
+			border-top-width: 5px;
+		}
+
+	.select-ok {
+    border: 1px solid #ccc;
+    width: 100px;
+    height: 43px;
+    border-radius: 3px;
+    margin-left: 15%;
+    overflow: hidden;
+    background: #fafafa url("images/1.png") no-repeat 90% 50%;
+}
+	.select-ok1 {
+    border: 1px solid #ccc;
+    width: 120px;
+    height: 43px;
+    border-radius: 3px;
+    margin-left: 15%;
+    overflow: hidden;
+    background: #fafafa url("images/1.png") no-repeat 90% 50%;
+}
+
+	.select-ok select {
+    padding: 5px 8px;
+    width: 130%;
+    margin-top: 6px;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+	}
+
+	.select-ok select:focus {
+    outline: none;
+	}
+}
+
+
+
+.footer{
+	clear: both;
+	border: 1px solid #dedede;
+	padding: 10px;
+	margin: 10px;
+}
+
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* untuk ukuran 1080px kebawah */
+@media screen and (max-width: 1080px) {
+	
+	.container {
+		width: 100%;
+	}
+	.left {
+		width: 25%;
+		background: #fff000;
+	}
+	.middle {
+		width: 68%;
+		float: right;
+	}
+	
+	.right {
+		clear: both;
+		padding: 1% 4%;
+		width: auto;
+		float: none;
+	}
+}
+
+
+/* untuk ukuran layar 700px kebawah */
+@media screen and (max-width: 780px) {
+	
+	.header, 
+	.footer{
+		width: auto;
+		float: none;
+	}
+	.left {
+		width: auto;
+		float: none;
+	}
+	
+	.middle {
+		width: auto;
+		float: none;
+	}
+	.middle1 {
+		width: auto;
+		float: none;
+	}
+	.middle2 {
+		width: auto;
+		float: none;
+	}
+	
+	.right {
+		width: auto;
+		float: none;
+	}
+
+}
+
+
