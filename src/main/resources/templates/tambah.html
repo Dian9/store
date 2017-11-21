@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tambah Produk</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styletambah.css">
+	<style> 
+	input[type=text] {
+    width: 30%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 10px;
+    margin-left: 15%;
+    margin-top: -3px;
+	}
+	dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.select-style {
+    border: 1px solid #ccc;
+    width: 410px;
+    height: 43px;
+    border-radius: 3px;
+    margin-left: 15%;
+    overflow: hidden;
+    background: #fafafa url("images/1.png") no-repeat 90% 50%;
+}
+
+.select-style select {
+    padding: 5px 8px;
+    width: 130%;
+    margin-top: 6px;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+}
+
+.select-style select:focus {
+    outline: none;
+}
+input {
+  font-size: 20px;
+  height:50px;
+}
+.imagediv {
+    float:left;
+    margin-top:50px;
+}
+.imagediv .showonhover {
+    background:red;
+    padding:20px;
+    opacity:0.9;
+    color:white;
+    width: 100%;
+    display:block;  
+    text-align:center;
+    cursor:pointer;
+}
+.image-upload > input
+{
+    display: none;
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    float: right;
+    margin-right: 15px;
+}
+
+.button2 {background-color: #008CBA;} /* Blue */
+.button3 {background-color: #f44336;} /* Red */ 
+.button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
+.button5 {background-color: #600445;} /* ungu */
+}
+	</style>
+  
+</head>
+<body>
+	
+
+<div class="container">
+	
+	<div class="header">
+		<h3>Tambah Produk</h3>
+
+		
+	</div> <!--/ .header -->
+
+	<div class="main">
+		
+		<div class="left">
+			<h3>Side Bar</h3>
+			<p>------- Content -------</p>
+		</div> <!--/ .header -->
+
+		<div class="middle">
+			<p>Sebelum menambahkan produk, pastikan produk tersebut sudah sesuai dengan <a target="_blank" href="#" >syarat dan ketentuan Markito</a>. Semua produk yang melanggar syarat dan ketentuan akan dinon-aktifkan oleh tim kami.</p>
+		</div> <!--/ .middle -->
+		<div class="middle">
+		<h3>Apa yang Anda jual</h3>
+		<p> Nama Produk :</p> 
+		<form>
+  		<input type="text" name="search" placeholder="Masukan Nama Produk">
+		</form><p style="margin-left: 15%">Nama produk hanya bisa diubah jika produk ini belum terjual</p>
+		<p> Kategori :</p>
+		<div class="select-style">
+  <select>
+    <option value="Kategori">Pilih Kategori</option>
+    <option value="Pria">Fashion Pria</option>
+    <option value="Wanita">Fashion Wanita</option>
+    <option value="Anak">Fashion Anak</option>
+    <option value="DLL">DLL</option>
+  </select>
+</div>
+  	</div>
+    <div class="middle1">
+        <h3>Gambar Produk</h3>
+        <p>Masukkan gambar produk minimal satu foto. Gunakan 5 foto terbaik untuk gambar produk Anda.</p>
+       <div class="image-upload">
+    <label for="file-input">
+        <img src="images/img.png"/>
+    </label>
+
+    <input id="file-input" type="file"/>
+</div>
+
+         <h6 class="text">
+        Gunakan 5 foto terbaik untuk produk ini.
+        (format .JPG .JPEG .PNG max 10 MB)
+        <a href="#"> Tips mengambil foto produk yang menarik. Cek di sini.</a></h6>
+    </div>
+     <div class="middle2">
+       <h3>Detail Produk</h3>
+        <p>Jelaskan Tentang produk Anda.</p>
+        <p class="cat"> Harga :</p>
+        <div class="select-ok" style="float: left">
+            <select>
+                <option value="Rp">Rp</option>
+                <option value="US$">US$</option>
+            </select>
+        </div>
+        <div>
+           <input type="text" style="float: left;margin-left: 5px" placeholder="Masukkan Harga">
+
+        </div>
+         
+           <div>
+        <h6 class="text1">
+        Harga Rp tanpa menggunakan koma dan titik. Contoh: 125000.<br>
+        harga US$ dapat menggunakan desimal. Contoh: 125.50</h6>
+          </div>
+          <a href="" style="margin-top: -9%;margin-left: 110px;">+Tambah Harga Grosir</a>
+          <p style="margin-top: 20%;margin-left: 1px;border-bottom: 1px solid #aaa;"></p>
+          <!--/. -->
+        <p class="cat"> Berat :</p>
+        <div class="select-ok" style="float: left">
+            <select>
+                <option value="g">gram(g)</option>
+                <option value="kg">kilogram</option>
+            </select>
+        </div>
+
+        <div>
+
+        
+           <input type="text" style="float: left;margin-left: 5px" placeholder="Masukkan Berat">
+
+       </div>
+
+    <div class="cat1">
+       <p> Pemesanan Minimum / Buah :</p> 
+        <form>
+        <input type="text" name="search" placeholder=" 1">
+        </form>
+    <div>
+    <h6 class="text1">
+       Set minimal order hingga 10.000 item untuk sekali pemesanan.</h6>
+    </div>
+</div>
+    <div class="cat2">
+        <p class="cat" style="border-top: 1px solid #aaa;"> Status :</p>
+        <div class="select-style" style="float: left">
+            <select>
+                <option value="g">Stock Kosong</option>
+                <option value="kg">Stock Tersedia</option>
+            </select>
+        </div>
+    </div>
+     <div class="cat3">
+        <p class="cat"> Etalase :</p>
+        <div class="select-style" style="float: left">
+            <select>
+                <option value="g">** Pilih Etalase</option>
+                <option value="kg">** Tambah Etalase</option>
+            </select>
+        </div>
+    </div>
+    <div class="cat4">
+        <p class="cat"> Kondisi :</p>
+        <div class="select-style" style="float: left">
+            <select>
+                <option value="g">Baru</option>
+                <option value="kg">Bekas</option>
+            </select>
+    </div>
+    </div>
+    <div class="cat4">
+        <p class="cat"> Asuransi :</p>
+        <div class="select-style" style="float: left">
+            <select>
+                <option value="g">Oposional</option>
+                <option value="kg">Ya</option>
+            </select>
+    </div>
+    </div>
+</div>
+    <div class="middle3">
+       <h3>Deksripsi Produk</h3>
+       <p> Deksripsi Produk :</p> 
+        <form>
+        <textarea rows="15" cols=70"></textarea>
+            <div>
+        <h6 class="text1">
+       Maksimum 2000 karakter</h6>
+    </div>
+</div>
+<div>
+    <button class="button button3">Batal</button>
+    <button class="button button4">Simpan & Tambah Baru</button>
+    <button class="button button5">Simpan</button>
+</div>
+</div>
+
+	 <!--/ .content -->
+
+	 <!--/ .main -->
+
+	<div class="footer">
+		<h4>Footer</h4>
+		<p>Copyright &copy; 2017 <a href="#">PT. Markito </a></p>
+	</div> <!--/ .footer -->
+	
+ 
+</div>
+
+</body>
+</html>
